@@ -1,0 +1,128 @@
+<app-header></app-header>
+<section id="slider" class="banner-two">
+  <div class="about-banner">
+    <div class="container banner-text">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Blog</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+  <ul class="nav nav-tabs nav-tabs-danger nav-justified top-icon">
+    <li [class]="selectedClass">
+      <a class="nav-link {{tab1}}" data-toggle="tab" (click)="swapTab(1)"><i class="icon-home">
+
+        </i> <span class="hidden-xs">
+          <b>VALIDATE</b>
+        </span></a>
+    </li>
+    <!-- class="nav-item cursorPointer" -->
+    <li [class]="selectedClass2">
+      <a class="nav-link {{tab2}}" data-toggle="tab" (click)="swapTab(2)"><i class="icon-home"></i>
+        <span class="hidden-xs">
+          <b>SEARCH</b>
+        </span></a>
+    </li>
+
+  </ul>
+  <div class="container displayOnLapTop" id="content" *ngIf="tabVlues=== 1">
+    <h3>Validate</h3>
+    <section class="blog-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-7 col-md-9">
+            <h2>Blog Details</h2>
+
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+  <div class="displayOnLapTop" *ngIf="tabVlues === 2">
+
+    <section class="blog-content">
+      <div class="container">
+        <div class="row">
+          <div class="row img-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 reset_dsg">
+              <img style="padding-top: 6%;" src="assets/img/firs.png">
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-6">
+              <form style="margin-top: 30px">
+                 <p><input type="text" placeholder="Tax Identification Number(TIN)" id="searchBox" name="searchBox" #searchBox="ngModel" [(ngModel)]="searchValues"/></p>
+                <!-- <p><input type="text" placeholder="Tax Clearance Certificate(TCC)" id="searchBox"/></p> -->
+                <p id="btn-con"><button type="button" class="tinbtn btn btn-search" (click)="searchFirs(searchValues)">Search Data</button></p>
+              </form>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-4">
+              <!-- display error message -->
+              <p id="error">  </p>
+            </div>
+          </div>
+          <div class="row table-row" style="display: none">
+            <div class="col-md-offset-4">
+              <table >
+                <tr>
+                  <td id='value'>Taxpayer Name:</td>
+                  <td id="name"></td>
+                </tr>
+                <tr>
+                  <td id='value'>Reg. Number:</td>
+                  <td id="regNum"></td>
+                </tr>
+                <tr>
+                  <td id='value'> FIRS TIN:</td>
+                  <td id="fTIN"></td>
+                </tr>
+                <tr>
+                  <td id='value'>JTB TIN:</td>
+                  <td id="jTIN"></td>
+                </tr>
+                <tr>
+                  <td id='value'>Tax Payer Type:</td>
+                  <td id="type"></td>
+                </tr>
+                <tr>
+                  <td id='value'>Tax Office:</td>
+                  <td id="address"></td>
+                </tr>
+                <tr>
+                  <td id='value'>Email:</td>
+                  <td id="email"></td>
+                </tr>
+                <tr>
+                  <td id='value'>Phone:</td>
+                  <td id="phoneNumber"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!--slider Section End Here -->
+
+

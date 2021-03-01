@@ -1,0 +1,57 @@
+/*
+ 1.1) Banner Section
+ -----------------------------*/
+ .homepage #slider {
+	width: 100%;
+}
+.homepage .banner-slider {
+	position: relative;
+	width: 100%;
+}
+
+.homepage .banner-slider h2 {
+	margin-bottom:23px;
+	font-size: 60px;
+	color: #fff;
+	line-height: 1 !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: inherit;
+}
+.homepage .banner-slider .h1 {
+	margin-bottom:15px;
+	font-size: 55px !important;
+	color: #fff;
+	line-height: 1 !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: inherit;
+}
+
+.homepage .banner-slider .item-3 .h1{
+	text-align:center;
+	margin-bottom:20px;
+}
+.homepage .banner-slider .hero-slider-two  h2, .banner-slider .hero-slider-two  span {
+	color: #2b2a2f;
+}
+.homepage .banner-slider span {
+	padding-bottom:10px;
+	font-size: 16px !important;
+	color: #fff;
+	display: block;
+	font-family: 'Merriweather', serif;
+	white-space: normal;
+
+	line-height: 1.5 !important;
+}
+body.homepage .banner-slider span{
+	width:454px !important;
+
+}
+body.homepage .banner-slider .item-3 span {
+    max-width: 807px !important;
+    width:100% !important;
+}

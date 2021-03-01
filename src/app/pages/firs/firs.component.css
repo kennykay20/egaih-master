@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#signOut{
+  background: #bfad81;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.spanText, #spanText{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.spanText > a, #spanText > a{
+  text-decoration: none;
+  font-weight: bold;
+}
+form > p{
+  text-align: center;
+}
+form > p > input{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 70%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+}
+form > p > input:focus{
+  outline: none;
+}
+form > p > button{
+    background: #bfad81 !important;
+    color: white !important;
+    width: 50%;
+    margin-top: 3%;
+    padding-top: 1.5% !important;
+    padding-bottom: 1.5% !important;
+}
+
+/*
+mobile screen
+*/
+@media screen and (max-width: 451px) {
+  #signOut{
+    margin-bottom: 15%;
+  }
+  .reset_dsg > img{
+      width: 50% !important;
+  }
+  .reset_dsg{
+    text-align: center;
+/*    margin-bottom: 15%;
+*/  }
+}
+
